@@ -1,0 +1,385 @@
+<!doctype html>
+<html class="theme-5">
+<meta charset="utf-8" />
+<link href="../html-slideshow.bundle.min.css" rel="stylesheet" />
+<link href="../style.css" rel="stylesheet" />
+<script src="https://dbwebb.se/cdn/js/html-slideshow_v1.1.0.bundle.min.js"></script>
+
+<title>RESTful API</title>
+
+<script data-role="slide" type="text/html" data-markdown class="titlepage center">
+# RESTful API
+## How to design
+### Mikael Roos
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# Agenda
+
+* 
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# Expected outcome
+
+* You have a system to build, create a highlevel plan
+* Plan your system and its subsystems, choose your architecture and create a blueprint of your system-to-be
+* System Design Specification (SDS)
+    * One document containing the text, reasoning and blueprints
+    * Communicate with team members and stake holders
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Software System Architecture
+
+* Layered architecture
+* Event-driven architecture
+* Microkernel architecture
+* Microservices architecture
+* Space-based architecture
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Layered architecture
+
+<figure>
+<img src="img/layered.png">
+<figcaption>Example drawing on a Layered architecture.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Layered architecture...
+
+<figure>
+<img src="img/layered1.png" width="70%">
+<figcaption>Another example drawing on a Layered architecture.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Event-driven architecture
+
+<figure>
+<img src="img/event.svg">
+<figcaption>Example drawing on a Event-driven architecture.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Event-driven architecture...
+
+<figure>
+<img src="img/event1.png" width="90%">
+<figcaption>Another example drawing on a Event-driven architecture.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Microkernel architecture
+
+<figure>
+<img style="background-color: white;" src="img/microkernel.png">
+<figcaption>Example drawing on a Microkernel architecture.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Microkernel architecture...
+
+<figure>
+<img src="img/microkernel1.png" width="90%">
+<figcaption>Another example drawing on a Microkernel architecture.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Microservices architecture
+
+<figure>
+<img src="img/microservices.png">
+<figcaption>Example drawing on a Microservices architecture.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Microservices architecture...
+
+<figure>
+<img src="img/microservices1.png" width="70%">
+<figcaption>Another example drawing on a Microservices architecture.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# Space-based architecture
+
+<figure>
+<img src="img/space.gif">
+<figcaption>Example drawing on a Space-based architecture.</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="titlepage center">
+# 4+1 Architectural View Model
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# 4+1 Architectural View Model
+
+>  "describing the architecture of software-intensive systems, based on the use of multiple, concurrent views".
+
+> The views are used to describe the system from the viewpoint of different stakeholders, such as end-users, developers, system engineers, and project managers.
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# 4+1 Architectural View Model
+
+* Logical View
+* Process view
+* Development view
+* Physical view
+* Scenarios
+
+<p class="footnote">https://en.wikipedia.org/wiki/4%2B1_architectural_view_model</p>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# 4+1 View Model...
+
+* Logical View
+    * Functionality provided to the end users
+* Process view
+    * Dynamic aspects and run time behaviour.
+* Development view
+    * Show subsystems/components known to the programmer.
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# 4+1 View Model...
+
+* Physical view
+    * Physical nodes and layers, for the system engineer.
+* Scenarios
+    * Describing the architecture using use cases.
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+# 4+1 View Model...
+
+<figure>
+<img style="background-color: white;" src="img/architecture.svg">
+<figcaption>The "4+1 Architectural View Model".</figcaption>
+</figure>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# 4+1 View Model...
+
+> The “4+1” view model is rather “generic”: other notations and tools can be used, other design methods can be used, especially for the logical and process decompositions, but we have indicated the ones we have used with success.
+
+<p class="footnote">https://en.wikipedia.org/wiki/4%2B1_architectural_view_model</p>
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# Software architecture
+
+* Fundamental structure of a software system
+    * software elements
+    * relations among them
+    * properties of the elements/relations
+* A blueprint for the system
+* Analogous to the "architecture of a building"
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# Software architecture...
+
+* Is about making fundamental structural choices
+* Facilitates communication between stakeholders
+* Captures early decisions about the high-level design
+* Allows reuse of design components between projects
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# Artifacts
+
+* Verbose text on the system in general
+* Verbose text and image of the system overall structure
+* Define subsystems and how they interact
+    * Type of communication
+    * Behaviour, interaction and users
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# Artifacts...
+
+* Define clients and their architecture
+* Define servers and their architecture
+* Show where persistent data is to be
+* ER for the database
+* Design of the REST API
+* Describe how data is processed and flows through the system
+* Discussion on various frameworks or not
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# UML diagrams
+
+* Class, state diagrams (logical view)
+* Sequence, communication, activity diagrams (process view)
+* Component, package diagram (development view)
+* Deployment diagrams (physical view)
+* Use case diagram (scenarious)
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# How to draw
+
+* Make each picture tell a well defined story
+* Make it look good
+
+</script>
+
+
+
+<!--
+<script data-role="slide" type="text/html" data-markdown>
+# Summary
+
+* About software architectures
+
+</script>
+-->
+
+
+<script data-role="slide" type="text/html" data-markdown class="titlepage center">
+# The end
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+</script>
+
+
+<!--
+<script data-role="slide" type="text/html" data-markdown>
+# Question
+
+* Finn exempel på (webb) applikationer som är helt/delvis byggda enligt vardera arkitektur.
+
+    * Layered architecture
+    * Event-driven architecture
+    * Microkernel architecture
+    * Microservices architecture
+    * Space-based architecture
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# Question
+
+* Coursepress är byggd med WordPress. Vilken arkitektur är basen för WordPress? Finns det flera alternativ för arkitektur?
+
+    * Layered architecture
+    * Event-driven architecture
+    * Microkernel architecture
+    * Microservices architecture
+    * Space-based architecture
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# Question
+
+* Moderna ramverk likt Express, Symfony, Laravel - vilken arkitektur är de byggda enligt?
+
+    * Layered architecture
+    * Event-driven architecture
+    * Microkernel architecture
+    * Microservices architecture
+    * Space-based architecture
+
+</script>
+-->
+
+
+</html>
