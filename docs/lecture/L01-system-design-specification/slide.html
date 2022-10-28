@@ -9,7 +9,7 @@
 
 <script data-role="slide" type="text/html" data-markdown class="titlepage center">
 # System Design Specification (SDS)
-## Defining the architecture
+## Defining and visualising the architecture of a system
 ### Mikael Roos
 </script>
 
@@ -29,12 +29,37 @@
 <script data-role="slide" type="text/html" data-markdown>
 # Expected outcome
 
-* You have a system to build, create a highlevel plan
-* Plan your system and its subsystems, choose your architecture and create a blueprint of your system-to-be
+* You have a system to build - create a highlevel plan
+* Plan your system and its subsystems,
+    * choose your architecture 
+    * create a blueprint of your system-to-be
 * System Design Specification (SDS)
     * One document containing the text, reasoning and blueprints
     * Communicate with team members and stake holders
 
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Target audience
+
+* Teammates
+* Stakeholders
+    * Project managers
+    * Unit managers
+* Customer
+    * The orderer who pays the bill
+    * The user
+
+> Write to someone who are on a slightly lesser level than youreself in understanding the system.
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="titlepage center">
+# Software System Architecture
 </script>
 
 
@@ -169,7 +194,7 @@
 <script data-role="slide" type="text/html" data-markdown>
 # 4+1 Architectural View Model
 
->  "describing the architecture of software-intensive systems, based on the use of multiple, concurrent views".
+>  "Describe the architecture of software-intensive systems, based on the use of multiple, concurrent views".
 
 > The views are used to describe the system from the viewpoint of different stakeholders, such as end-users, developers, system engineers, and project managers.
 
@@ -241,6 +266,13 @@
 
 
 
+<script data-role="slide" type="text/html" data-markdown class="titlepage center">
+# Software System Architecture
+## Design and visualise your design
+</script>
+
+
+
 <script data-role="slide" type="text/html" data-markdown>
 # Software architecture
 
@@ -248,6 +280,8 @@
     * software elements
     * relations among them
     * properties of the elements/relations
+    * usage of the system
+    * data/events in the system
 * A blueprint for the system
 * Analogous to the "architecture of a building"
 
@@ -272,9 +306,8 @@
 
 * Verbose text on the system in general
 * Verbose text and image of the system overall structure
+* Define users and their user interfaces and usage
 * Define subsystems and how they interact
-    * Type of communication
-    * Behaviour, interaction and users
 
 </script>
 
@@ -283,6 +316,7 @@
 <script data-role="slide" type="text/html" data-markdown>
 # Artifacts...
 
+* Use cases
 * Define clients and their architecture
 * Define servers and their architecture
 * Show where persistent data is to be
@@ -304,6 +338,8 @@
 * Deployment diagrams (physical view)
 * Use case diagram (scenarious)
 
+<p class="footnote">UML with relation to the 4+1 model</p>
+
 </script>
 
 
@@ -312,6 +348,22 @@
 # How to draw
 
 * Make each picture tell a well defined story
+* Several small pictures might build a better story then one large and complex picture
+* Make it look good
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# How to proceed?
+
+* Create a SDS doc with headlines and structure
+* Start talking to create a common view and understadning of the system
+* Feel free to wait until next week or so with deciding on implementing techniques
+* Define the user and usage of the system, perhaps in a section each
+* Define the submodules and how they interact, perhaps a section each
+* Write text, draw images and sketches
 * Make it look good
 
 </script>
