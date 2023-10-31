@@ -36,7 +36,6 @@
 <script data-role="slide" type="text/html" data-markdown class="center">
 <figure>
 <img src="img/problems-in-diagram.png" style="width: 50%;" title="https://www.reddit.com/r/xkcd/comments/jxb36y/software_architecture_101suggested_i_crosspost/">
-<figcaption>Understanding the problem by drawing a diagram of the architecture.</figcaption>
 </figure>
 
 </script>
@@ -67,24 +66,25 @@
     * Unit managers
 * Customer
     * The orderer who pays the bill
-    * The user
+    * The user of the system
+    * Maintenance staff, education
 
 </script>
 
 
 
 <script data-role="slide" data-markdown type="text/html">
-# Split Analysis and Design
+# Separate Analysis - Design
+
+> Separate Analysis (highlevel system) from Design (target environment) to make it easier to communicate.
+
+> Compare to database ER modelling.
 
 * Analysis
     * Sketch the system, without any thoughts of the target environment where it should be implemented
 
 * Design
     * Select a target environment for the analysed system and make it fit
-
-> Separate Analysis (highlevel system) from Design (target environment) to make it easier to communicate.
-
-> Compare to database ER modelling.
 
 </script>
 
@@ -133,11 +133,8 @@
 
 
 <script data-role="slide" type="text/html" data-markdown class="center">
-# Layered architecture
-
 <figure>
-<img src="img/layered.png">
-<figcaption>Example drawing on a Layered architecture.</figcaption>
+<img src="img/layered.png" width="100%">
 </figure>
 
 </script>
@@ -145,11 +142,8 @@
 
 
 <script data-role="slide" type="text/html" data-markdown class="center">
-# Layered architecture...
-
 <figure>
-<img src="img/layered1.png" width="70%">
-<figcaption>Another example drawing on a Layered architecture.</figcaption>
+<img src="img/layered1.png" width="90%">
 </figure>
 
 </script>
@@ -168,11 +162,8 @@
 
 
 <script data-role="slide" type="text/html" data-markdown class="center">
-# Event-driven architecture
-
 <figure>
-<img src="img/event.svg">
-<figcaption>Example drawing on a Event-driven architecture.</figcaption>
+<img src="img/event.svg" width="100%">
 </figure>
 
 </script>
@@ -180,11 +171,8 @@
 
 
 <script data-role="slide" type="text/html" data-markdown class="center">
-# Event-driven architecture...
-
 <figure>
-<img src="img/event1.png" width="90%">
-<figcaption>Another example drawing on a Event-driven architecture.</figcaption>
+<img src="img/event1.png" width="100%">
 </figure>
 
 </script>
@@ -203,11 +191,8 @@
 
 
 <script data-role="slide" type="text/html" data-markdown class="center">
-# Microkernel architecture
-
 <figure>
-<img style="background-color: white;" src="img/microkernel.png">
-<figcaption>Example drawing on a Microkernel architecture.</figcaption>
+<img style="background-color: white;" src="img/microkernel.png" width="100%">
 </figure>
 
 </script>
@@ -215,11 +200,8 @@
 
 
 <script data-role="slide" type="text/html" data-markdown class="center">
-# Microkernel architecture...
-
 <figure>
-<img src="img/microkernel1.png" width="90%">
-<figcaption>Another example drawing on a Microkernel architecture.</figcaption>
+<img src="img/microkernel1.png" width="100%">
 </figure>
 
 </script>
@@ -238,23 +220,16 @@
 
 
 <script data-role="slide" type="text/html" data-markdown class="center">
-# Microservices architecture
-
 <figure>
-<img src="img/microservices.png">
-<figcaption>Example drawing on a Microservices architecture.</figcaption>
+<img src="img/microservices.png" width="100%">
 </figure>
-
 </script>
 
 
 
 <script data-role="slide" type="text/html" data-markdown class="center">
-# Microservices architecture...
-
 <figure>
-<img src="img/microservices1.png" width="70%">
-<figcaption>Another example drawing on a Microservices architecture.</figcaption>
+<img src="img/microservices1.png" width="100%">
 </figure>
 
 </script>
@@ -267,6 +242,7 @@
 * Architecture pattern for applications that have variable and unpredictable concurrent user volumes.
 * Designed to address and solve scalability and concurrency issues
 * Interact by exchanging tuples/entries via one or more shared spaces
+* Distributed computing systems
 
 <p class="footnote">https://en.wikipedia.org/wiki/Space-based_architecture</p>
 
@@ -275,12 +251,16 @@
 
 
 <script data-role="slide" type="text/html" data-markdown class="center">
-# Space-based architecture
+<figure><img src="img/space.gif" width="100%"></figure>
+</script>
 
-<figure>
-<img src="img/space.gif">
-<figcaption>Example drawing on a Space-based architecture.</figcaption>
-</figure>
+
+
+<script data-role="slide" type="text/html" data-markdown>
+# Pattern or not?
+
+* Showing the arhictecture is about drawing image with subsystems showing thier connections and communications
+* Feel free to adhere a pattern or draw more freely
 
 </script>
 
@@ -288,9 +268,7 @@
 
 <script data-role="slide" type="text/html" data-markdown class="titlepage center">
 # 4+1 Architectural View Model
-
-> A model to make several drawings to understand the system.
-
+## A model to make several drawings to understand the system.
 </script>
 
 
@@ -317,6 +295,12 @@
 
 <p class="footnote">https://en.wikipedia.org/wiki/4%2B1_architectural_view_model</p>
 
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="center">
+<figure><img style="background-color: white;" src="img/architecture.svg" width="100%"></figure>
 </script>
 
 
@@ -356,19 +340,15 @@
 
 
 <script data-role="slide" type="text/html" data-markdown class="center">
-# 4+1 View Model...
-
-<figure>
-<img style="background-color: white;" src="img/architecture.svg">
-<figcaption>The "4+1 Architectural View Model".</figcaption>
-</figure>
-
+<figure><img style="background-color: white;" src="img/architecture.svg" width="100%"></figure>
 </script>
 
 
 
 <script data-role="slide" type="text/html" data-markdown>
 # 4+1 View Model...
+
+It does not matter exactly how you draw the blueprints, or what notation you use.
 
 > The “4+1” view model is rather “generic”: other notations and tools can be used, other design methods can be used, especially for the logical and process decompositions, but we have indicated the ones we have used with success.
 
